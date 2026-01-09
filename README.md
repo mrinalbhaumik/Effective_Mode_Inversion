@@ -10,12 +10,12 @@ This MATLAB script performs Particle Swarm Optimization (PSO) to invert layered 
 
 ### Step 1: Prepare your input data
 
-* Place your input Excel file (e.g., `Target curve- HVL_10m.xlsx`) in the working directory.
-* The Excel file should contain three columns:
+* Place your input file (e.g., `Target curve- HVL_10m.xlsx`) in the working directory.
+* The Excel file should contain two/three columns:
 
   1. Frequency (`w`)
   2. Phase velocity (`v_f`)
-  3. Standard deviation (`v_std`)
+  3. Standard deviation (`v_std`) (optional)
 
 ### Step 2: Configure parameters (at the top of `PSO_main.m`)
 
