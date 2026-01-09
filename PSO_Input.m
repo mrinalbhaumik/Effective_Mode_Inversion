@@ -88,7 +88,7 @@ global name fullFolderPath
 % Import target curve: (.txt, .xlsx, .csv)
 % Col-1:Frequency; Col-2:Phase velocity/slowness; Col-3: std_dev (optional)
 
-[filepath, name, ext]   = fileparts('SampleTarget7_24Ch@2m_2m_Offset.txt'); 
+[filepath, name, ext]   = fileparts('Example_Target1_24Ch@1m_10m_Offset.txt'); 
 filePath                = fullfile(filepath, [name, ext]);
 Data                    = readmatrix(filePath);
 
@@ -101,9 +101,9 @@ Data                    = preprocessData(Data, Include_min_COV, Resample, Number
 
 % Acquisition parameters
 
-Acquisition.dr          = 2;            % Sensor spacing (m)
+Acquisition.dr          = 1;            % Sensor spacing (m)
 Acquisition.rN          = 24;           % Number of receiver
-Acquisition.r0          = 2;           % source to 1st sensor distance (m)
+Acquisition.r0          = 10;           % source to 1st sensor distance (m)
 
 %% Advanced Input Parameters ===============================================================================================================
 
